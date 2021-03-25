@@ -8,10 +8,17 @@ var app = new Vue(
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNxTlOFNycETFtOARjFF6itBflWb2bviIOug&usqp=CAU",
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa2nWeSDVwz8XqvIEVjqqECluCOmwVkcwwrQ&usqp=CAU"
       ],
-      imageIndex : 0,
+      imagesIndex : 0,
+    },
     methods:{
-
-    }
+      nextImage: function(){
+        this.imagesIndex++;
+        console.log(this);
+      },
+      previousImage: function(){
+        this.imagesIndex--;
+        console.log(this);
+      }
     }
   }
 );

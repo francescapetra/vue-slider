@@ -12,11 +12,15 @@
 <body>
   <div id="root">
     <div class="carousel_container">
-      <div class="prev"><i class="arrow fas fa-caret-left"></i></div>
-      <div class="carousel">
-        <img :src="images[0]" alt="Sephora">
+      <div class="prev">
+        <i @click="previousImage"class="arrow fas fa-caret-left"></i>
       </div>
-      <div class="prev"><i class="arrow fas fa-caret-right"></i></div>
+      <div class="carousel">
+        <img :src="images[imagesIndex]" alt="Sephora">
+      </div>
+      <div class="next">
+        <i @click="nextImage" class="arrow fas fa-caret-right"></i>
+      </div>
       <i class="bullet fas fa-gem"></i>
     </div>
 
