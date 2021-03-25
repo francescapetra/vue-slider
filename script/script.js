@@ -13,11 +13,17 @@ var app = new Vue(
     methods:{
       nextImage: function(){
         this.imagesIndex++;
-        console.log(this);
+        //console.log(this);
+        if (this.imagesIndex == this.images.length) {
+          this.imagesIndex = 0;
+        }
       },
       previousImage: function(){
         this.imagesIndex--;
-        console.log(this);
+        //console.log(this);
+        if (this.imagesIndex < 0) {
+          this.imagesIndex = this.images.length-1;
+        }
       }
     }
   }
