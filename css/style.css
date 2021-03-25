@@ -1,0 +1,30 @@
+*{
+  background-color: lightgray;
+}
+.red{
+  color: red;
+}
+.carousel_container{
+  height: 500px;
+  width: 600px;
+  background-color: pink;
+  margin: auto;
+  margin-top: 100px;
+  align-items: center;
+  display: flex;
+}
+.carousel{
+  height: 400px;
+  width: 500px;
+  margin: auto;
+  background-color: orange;
+  display: flex;
+  align-items: center;
+
+}
+i.fas{
+  font-size: 70px;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+}
