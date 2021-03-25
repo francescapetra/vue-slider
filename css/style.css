@@ -1,5 +1,5 @@
 *{
-  background-color: lightgreen;
+  background-color: black;
 }
 .red{
   color: red;
@@ -19,7 +19,6 @@
   display: flex;
   align-items: center;
   width: 100%;
-  background-color: red
 
 }
 i.arrow{
@@ -31,21 +30,26 @@ i.arrow{
 
 }
 .container_bullet{
-background-color: pink;
+background-color: white;
 position: relative;
 display: flex;
 align-self:flex-end;
 justify-content: center;
 align-content: center;
+width: 100%;
+margin-left: 25px;
 }
 i.bullet{
   position: absolute;
-  color: blue;
+  display: block;
+  margin-right: 5px;
+  color: white;
 }
 img{
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
   margin: 0 10px;
+
 }
 .active{
   color: red;
