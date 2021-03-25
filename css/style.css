@@ -7,7 +7,7 @@
 .carousel_container{
   height: 500px;
   width: 600px;
-  background-color: pink;
+  background-color: black;
   margin: auto;
   margin-top: 100px;
   align-items: center;
@@ -18,7 +18,7 @@
   height: 400px;
   width: 500px;
   margin: auto;
-  background-color: orange;
+  background-color: red;
   display: flex;
   align-items: center;
 
@@ -34,4 +34,10 @@ i.bullet{
   position: absolute;
   bottom: 15px;
   right: 50%;
+}
+i.bullet{
+  color: red;
+}
+img{
+  width: 100%;
 }
