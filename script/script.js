@@ -25,10 +25,10 @@ var app = new Vue(
           this.imagesIndex = this.images.length-1;
         }
       },
-      bulletImage: function(i){
-        this.imagesIndex = i;
-        console.log(this);
-      }
+      // bulletImage: function(i){
+      //   this.imagesIndex = i;
+      //   console.log(this);
+      // }
     }
   }
 );
