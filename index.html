@@ -12,17 +12,23 @@
 <body>
   <div id="root">
     <div class="carousel_container">
-      <div class="prev">
-        <i @click="previousImage"class="arrow fas fa-caret-left"></i>
-      </div>
+
       <div class="carousel">
+        <div class="prev">
+          <i @click="previousImage" class="arrow fas fa-caret-left"></i>
+        </div>
         <img :src="images[imagesIndex]" alt="Sephora">
-      </div>
       <div class="next">
         <i @click="nextImage" class="arrow fas fa-caret-right"></i>
       </div>
-      <i class="bullet fas fa-gem"></i>
+      </div>
+      <div class="container_bullet">
+        <i @click="bulletImage" class="bullet fas fa-gem"></i>
+        <i class="fas fa-gem" v-for="(image, index) in images" :class"imagesIndex == index ? 'active' : ''" @click ="bulletImage(index)"/></i>
+      </div>
+
     </div>
+
 
   </div>
 

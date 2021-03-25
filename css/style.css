@@ -1,5 +1,5 @@
 *{
-  background-color: lightgray;
+  background-color: lightgreen;
 }
 .red{
   color: red;
@@ -10,34 +10,43 @@
   background-color: black;
   margin: auto;
   margin-top: 100px;
-  align-items: center;
-  display: flex;
-  position: relative;
+
 }
 .carousel{
   height: 400px;
   width: 500px;
   margin: auto;
-  background-color: red;
   display: flex;
   align-items: center;
+  width: 100%;
+  background-color: red
 
 }
 i.arrow{
   font-size: 50px;
   display: inline-block;
   display: flex;
-  align-items: center;
-  color: violet;
+  justify-content: center;
+  color: red;
+
+}
+.container_bullet{
+background-color: pink;
+position: relative;
+display: flex;
+align-self:flex-end;
+justify-content: center;
+align-content: center;
 }
 i.bullet{
   position: absolute;
-  bottom: 15px;
-  right: 50%;
-}
-i.bullet{
-  color: red;
+  color: blue;
 }
 img{
   width: 100%;
+  object-fit: contain;
+  margin: 0 10px;
+}
+.active{
+  color: red;
 }
