@@ -23,8 +23,7 @@
       </div>
       </div>
       <div class="container_bullet">
-        <i @click="bulletImage" class="bullet fas fa-gem"></i>
-        <i class="fas fa-gem" v-for="(image, index) in images" :class"imagesIndex == index ? 'active' : ''" @click ="bulletImage(index)"/></i>
+        <i class="fas fa-gem" v-for="(image, index) in images" :class="imagesIndex == index ? 'active' : ''" @click ="bulletImage(index)"/></i>
       </div>
 
     </div>
