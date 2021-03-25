@@ -12,6 +12,7 @@
   margin-top: 100px;
   align-items: center;
   display: flex;
+  position: relative;
 }
 .carousel{
   height: 400px;
@@ -22,9 +23,15 @@
   align-items: center;
 
 }
-i.fas{
-  font-size: 70px;
+i.arrow{
+  font-size: 50px;
   display: inline-block;
   display: flex;
   align-items: center;
+  color: violet;
+}
+i.bullet{
+  position: absolute;
+  bottom: 15px;
+  right: 50%;
 }
